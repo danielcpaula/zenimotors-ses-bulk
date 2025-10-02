@@ -14,24 +14,24 @@ Desenvolvida para a **Zenimotors**, mas pode ser usada por qualquer empresa que 
 
 ## 📂 Estrutura do Projeto
 zenimotors-ses-ts/
-├── .env                  # Configurações de ambiente
-├── .gitignore
-├── package.json
-├── tsconfig.json
+├── .env                  # Configurações de ambiente <br>
+├── .gitignore<br>
+├── package.json<br>
+├── tsconfig.json<br>
 │
-├── data/                 # CSVs de entrada
-│   ├── contatos.csv      # Lista real de clientes/fornecedores
-│   └── sandbox.csv       # Lista de teste com simuladores SES
-│
-├── reports/              # Relatórios gerados automaticamente
-│
-└── src/
-├── aws.ts            # Cliente SES
-├── env.ts            # Variáveis de ambiente tipadas
-├── types.ts          # Tipos auxiliares
-├── utils.ts          # Funções utilitárias (CSV, chunk, report)
-├── create-template.ts# Script para criar template no SES
-└── send-bulk.ts      # Script principal de envio em massa
+├── data/                 # CSVs de entrada<br>
+│   ├── contatos.csv      # Lista real de clientes/fornecedores<br>
+│   └── sandbox.csv       # Lista de teste com simuladores SES<br>
+│<br>
+├── reports/              # Relatórios gerados automaticamente<br>
+│<br>
+└── src/<br>
+├── aws.ts            # Cliente SES<br>
+├── env.ts            # Variáveis de ambiente tipadas<br>
+├── types.ts          # Tipos auxiliares<br>
+├── utils.ts          # Funções utilitárias (CSV, chunk, report)<br>
+├── create-template.ts# Script para criar template no SES<br>
+└── send-bulk.ts      # Script principal de envio em massa<br>
 
 ---
 
@@ -52,14 +52,14 @@ AWS_REGION=sa-east-1
 AWS_ACCESS_KEY_ID=AKIAxxxxxxxxxxxxxxxx
 AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-SENDER_NAME=Segurança Zenimotors
-SENDER_ADDRESS=seguranca@zenimotors.com
+SENDER_NAME=Titulo do Email
+SENDER_ADDRESS=email@example.com
 
 TEMPLATE_NAME=AlertaBoletosV1
 CONFIG_SET=
 
-DEFAULT_URL_IMAGEM=https://zenimotors.com/alerta.jpg
-DEFAULT_LINK_SITE=https://zenimotors.com/boletos
+DEFAULT_URL_IMAGEM=https://dominio.com/alerta.jpg
+DEFAULT_LINK_SITE=https://dominio.com/boletos
 DEFAULT_CANAL_SUPORTE=https://wa.me/55XXXXXXXXXXX
 
 BATCH_SIZE=50
