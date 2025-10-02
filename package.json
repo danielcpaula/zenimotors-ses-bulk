@@ -1,0 +1,30 @@
+{
+  "name": "zenimotors-ses-bulk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:create-template": "tsx src/create-template.ts",
+    "dev:send-bulk": "tsx src/send-bulk.ts data/contatos.csv",
+    "dev:send-bulk:dry": "DRY_RUN=1 tsx src/send-bulk.ts data/contatos.csv",
+    "dev:send-bulk:sandbox": "tsx src/send-bulk.ts data/sandbox.csv",
+    "build": "tsc",
+    "start:create-template": "node dist/create-template.js",
+    "start:send-bulk": "node dist/send-bulk.js data/contatos.csv"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@aws-sdk/client-sesv2": "^3.901.0",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/csv-parse": "^1.1.12",
+    "@types/node": "^24.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
