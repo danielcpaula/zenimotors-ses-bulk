@@ -2,11 +2,11 @@ import { CreateEmailTemplateCommand } from '@aws-sdk/client-sesv2';
 import { ses } from './aws.js';
 import { ENV } from './env.js';
 
-const Subject = '[Alerta] Boletos em nome da Zenimotors – verifique antes de pagar';
+const Subject = '[Alerta] Boletos em nome da Germano Zeni Veículos LTDA – verifique antes de pagar';
 
 const Text = `Olá, {{nome}},
 
-Alerta de segurança: boletos fraudulentos usando o nome da Zenimotors.
+Alerta de segurança: boletos fraudulentos usando o nome da Germano Zeni Veículos LTDA.
 
 - Confirme beneficiário e CNPJ
 - Gere/valide boletos em: {{link_site}}
@@ -18,15 +18,14 @@ const Html = `<!doctype html>
 <html lang="pt-BR">
   <body style="font-family: Arial, sans-serif; line-height:1.6; color:#111;">
     <p>Olá, {{nome}},</p>
-    <p>Estamos emitindo este <strong>alerta de segurança</strong> sobre boletos fraudulentos que estão circulando em nome da <strong>Zenimotors</strong>.</p>
-    <p>Confira a imagem abaixo com os cuidados necessários:</p>
+    <p>Fique atento(a)! Está circulando um golpe de boleto falso em nome da <strong>Zeni Motors</strong>.</p>
+    <p>Confira abaixo como se proteger.</p>
     <p><img src="{{url_imagem}}" alt="Cuidados com boletos" style="max-width:100%; height:auto;" /></p>
     <ul>
       <li>Confirme o <strong>beneficiário</strong> e o <strong>CNPJ</strong> antes do pagamento.</li>
-      <li>Gere/valide boletos em: <a href="{{link_site}}">{{link_site}}</a></li>
       <li>Em caso de dúvida, fale no canal oficial: <a href="{{canal_suporte}}">{{canal_suporte}}</a></li>
     </ul>
-    <p>Equipe de Segurança – Zenimotors</p>
+    <p>Departamento Financeiro – Zeni Motors</p>
   </body>
 </html>`;
 
