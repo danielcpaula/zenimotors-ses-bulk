@@ -2,5 +2,5 @@ node_modules/
 .env
 reports/
 dist/
-data/contato.csv
+data/contatos.csv
 filtered/
