@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev:create-template": "tsx src/create-template.ts",
-    "dev:validate": "tsx src/validate-csv.ts",
+    "dev:clean": "tsx src/clean-contacts.ts",
+    "dev:validate": "tsx src/validator.ts",
+    "dev:validate-nullbounce": "tsx src/validate-nullbounce.ts",
     "dev:split": "tsx src/split-contacts.ts",
     "dev:make-canary": "tsx src/make-canary.ts",
     "dev:send-bulk": "tsx src/send-bulk.ts",
@@ -20,7 +22,8 @@
     "@aws-sdk/client-sesv2": "^3.901.0",
     "@fast-csv/format": "^5.0.5",
     "csv-parse": "^6.1.0",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "punycode": "^2.3.1"
   },
   "devDependencies": {
     "@types/csv-parse": "^1.1.12",

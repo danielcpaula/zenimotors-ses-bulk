@@ -1,6 +1,11 @@
 node_modules/
 .env
-reports/
-dist/
-data/contatos.csv
+cleaned/
+data/
 filtered/
+reports/
+splits/
+validated/
+dist/
+
+.DS_Store
